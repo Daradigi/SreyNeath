@@ -1,0 +1,149 @@
+
+#cart-icon {
+  width: 30px;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 50px;
+  cursor: move;
+  z-index: 1000;
+  margin-right: 50px;
+  margin-top: 5px;
+
+}
+#cart-count{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  background-color: red;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  
+
+}
+
+#cart-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; 
+  height: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  width: 400px;
+  margin-left: 30%;
+
+}
+.image{
+  width: 70px;
+  height: 120px;
+ 
+}
+#cart-modal.hidden {
+  display: none;
+}
+
+.cart-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+  position: relative;
+}
+
+.cart-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-content li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-content button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.add-to-cart{
+  width: 150px;
+  height: 40px;
+  border: solid none white;
+  border-radius: 25px;
+  background: rgb(211, 126, 5);
+}
+
+/* Make the cart content scrollable when items exceed a certain height */
+.cart-content {
+  max-height: 80vh; /* Limit height of the modal content */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Optional: style scroll bar (for modern browsers) */
+.cart-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cart-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.hidden {
+  display: none;
+}
+
+
+
+
+#cart-modal {
+  position: fixed;
+  top: 10%;
+  right: 20%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  z-index: 1000;
+}
+
+#cart-icon {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.remove-item {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.remove-item:hover {
+  background-color: #c82333;
+}
+
+#cart-items li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  gap: 5px;
+}
+
