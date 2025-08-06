@@ -1,0 +1,137 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+.a{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 15%;
+}
+.container{
+    width: 80%;
+}
+.buy1{
+    width: 100px;
+    height: 35px;
+    border:1px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(222, 216, 216);
+    margin-left: 45%;
+    padding-top: 4px;
+}
+.buy2{
+    width: 100px;
+    height: 35px;
+    border:1px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(222, 216, 216);
+    padding: 4px;
+}
+.box-menu{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.box1{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+}
+.box2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 10px;
+    border: 1px solid;
+    color: black;
+}
+a :hover{
+    background-color: red;
+    transition: 0.9s;
+    border: none;
+    
+}
+.sale{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 70%;
+    color: white;
+}
+/* Popular Of This Year Section */
+.toprate1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.toprate1:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.toprate1 img {
+    width: 30%;
+    min-width: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.toprate1 p {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .toprate1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .toprate1 img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    
+    .toprate1 p {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .toprate1 {
+        margin-bottom: 30px;
+    }
+    
+    .toprate1 img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .toprate1 img {
+        width: 100%;
+    }
+    
+    .toprate1 p {
+        font-size: 12px;
+    }
+}
+
+
