@@ -1,372 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  </head>
-  <body>
-    <!--Header-->
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="navbar">
-        <a href="#home" style="--i: 1" class="active">Home</a>
-        <a href="#about" style="--i: 2">About</a>
-        <a href="#skills" style="--i: 3">Skills</a>
-        <a href="#services" style="--i: 4">Services</a>
-        <a href="#contact" style="--i: 5">Contact</a>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--linking swiper css-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Shoes</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar section-content">
+            <a href="" class="nav-logo d-flex">
+                <img src=""  alt="">
+                <h3 class="text-white mt-2">Shoes</h3>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>                    
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a href="#contact" class="nav-link">MyTeam</a>
+                </li>-->
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
     </header>
+    <main>
+        <!--Hero section-->
+        <section class="hero-section">
+           <div class="section-content">
+            <div class="hero-details">
+                <h2 class="title">Black Friday sale</h2>
+                <h3 class="subtitle">Discount 50% - 70%  </h3>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quaerat reprehenderit quidem molestiae dignissimos? Obcaecati.</p>
+                <div class="buttons">
+                    <a href="#" class="button order-now">Order Now</a> 
+                    <a href="#" class="button contact-us">Contact Us</a> 
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="../project/image/Dara/1 Hero Image.png" alt="Hero" class="hero-image" >
+            </div>
+           </div> 
+        </section>
+        <!--about section-->
+        <section class="about-section" id="about">
+           <div class="section-content">
+            <div class="about-image-wrapper">
+                <img src="https://i.pinimg.com/736x/f2/bb/f8/f2bbf823bf267776e9f5522b12254c79.jpg" alt="About" class="about-image">
+            </div>
+            <div class="about-detials">
+                <h2 class="section-title">About Us</h2>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Rerum natus veritatis ullam laudantium reiciendis aliquam placeat rem molestias, et nihil, <br> maxime ut deleniti aliquid eaque quos unde tempore consectetur molestiae.</p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
 
-    <!--Home-->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Soy Sreyneath</h1>
-        <h3>And I'm a <span class="text"></span></h3>
-        <p>
-          I'm a web Designer. <br />
-          expertise is to create and website design, Frontend design, and more.
-        </p>
-        <div class="home-sci">
-          <a href="#" style="--i: 7"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" style="--i: 8"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" style="--i: 9"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#" style="--i: 10"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+           </div> 
+        </section>
+
+        <!-- Menu section-->
+        <section class="menu-section" id="menu">
+            <div class="about-menu d-flex justify-content-center">
+                <a href=""><h5 class="section-title">Our Menu</h5></a>
+                <a href="men.html"><h5 class="section-title">Men</h5></a>
+                <a href="women.html"><h5 class="section-title">Women</h5></a>
+            </div>
+
+            <div class="section-content" >
+                <ul class="menu-list" >
+                    
+                    <li class="product-item mb-5"  data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="https://i.pinimg.com/736x/2f/5d/dd/2f5ddd4376ec4b9c3ee7e4eaa7d7cf73.jpg" class="menu-image" alt="Hot Beverage" >
+                        <h3 class="name">Shoes</h3>
+                        <div class="price mb-2">
+                            <span class="discount ">$25.56</span> &emsp; 
+                            <span class="original">$40.43</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                        
+                        <button class="add-to-cart text-white ">Add to Cart 🛒</button>
+                    </li>
+
+                    <li class="product-item mb-5" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="https://i.pinimg.com/736x/25/1c/0a/251c0a6887c10d34f5f07923b836edc6.jpg" class="menu-image" alt="Shoes">
+                        <h3 class="name">Shoes</h3>
+                        <div class="price mb-2">
+                            <span class="discount ">$25.56</span> &emsp; 
+                            <span class="original">$40.43</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                        <button class="add-to-cart text-white ">Add to Cart 🛒</button>
+                    </li> 
+
+                    <li class="product-item mb-5" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="https://i.pinimg.com/736x/21/e9/e5/21e9e5c442871309238f7ab17cb5da08.jpg" class="menu-image" alt="Shoes">
+                        <h3 class="name">Shoes</h3>
+                        <div class="price mb-2">
+                            <span class="discount ">$25.56</span> &emsp; 
+                            <span class="original">$40.43</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                        <button class="add-to-cart text-white ">Add to Cart 🛒</button>
+                    </li>
+
+                    <li class="product-item mb-5" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="https://i.pinimg.com/736x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg" class="menu-image" alt="Shoes">
+                        <h3 class="name">Shoes</h3>
+                        <div class="price mb-2">
+                            <span class="discount ">$25.56</span> &emsp; 
+                            <span class="original">$40.43</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                        <button class="add-to-cart text-white ">Add to Cart 🛒</button>
+                    </li>
+
+                    <li class="product-item mb-5" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="https://i.pinimg.com/736x/a2/d8/cc/a2d8cc8087d3fdebdac08f02c629e126.jpg" class="menu-image" alt="Shoes">
+                        <h3 class="name">Shoes</h3>
+                        <div class="price mb-2">
+                            <span class="discount ">$25.56</span> &emsp; 
+                            <span class="original">$40.43</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                        <button class="add-to-cart text-white ">Add to Cart 🛒</button>
+                    </li>
+
+                    <li class="product-item mb-5" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="https://i.pinimg.com/736x/65/05/81/650581eaf66b79a52209b206eedba718.jpg" class="menu-image" alt="Shoes">
+                        <h3 class="name">Shoes</h3>
+                        <div class="price mb-2">
+                            <span class="discount ">$25.56</span> &emsp; 
+                            <span class="original">$40.43</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                        <button class="add-to-cart text-white ">Add to Cart 🛒</button>
+                    </li>
+
+                     <li class="product-item mb-5" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="https://i.pinimg.com/736x/08/d0/73/08d07346cb868dfa8c8679bdad6019b8.jpg" class="menu-image" alt="Shoes">
+                        <h3 class="name">Shoes</h3>
+                        <div class="price mb-2">
+                            <span class="discount ">$25.56</span> &emsp; 
+                            <span class="original">$40.43</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                        <button class="add-to-cart text-white ">Add to Cart 🛒</button>
+                    </li>
+
+                    <li class="product-item mb-5" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <img src="https://i.pinimg.com/736x/2d/be/7c/2dbe7cc765f1c660317cd8ce3b825604.jpg" class="menu-image" alt="Shoes">
+                        <h3 class="name">Shoes</h3>
+                        <div class="price mb-2">
+                            <span class="discount ">$25.56</span> &emsp; 
+                            <span class="original">$40.43</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet.</p>
+                        <button class="add-to-cart text-white ">Add to Cart 🛒</button>
+                    </li>
+
+                <!-- Add more product-item blocks as needed -->
+                </ul>
+                
+                
+            </div>
+        </section>
+
+        <!-- Menu testimonials-->
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-conten">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                       <ul class="testimonials-list swiper-wrapper ">
+
+                            <li class="testimonial swiper-slide ">
+                                <img src="../project/image/me copy.jpg" alt="User" class="user-image" >
+                                <h3 class="name">Zeii Neath</h3>
+                                <i class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quaerat esse incidunt possimus optio accusantium!</i>
+                            </li>
+
+                             <li class="testimonial swiper-slide">
+                                <img src="../project/image/me copy.jpg" alt="User" class="user-image">
+                                <h3 class="name">Zeii Neath</h3>
+                                <i class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quaerat esse incidunt possimus optio accusantium!</i>
+                            </li>
+
+                             <li class="testimonial swiper-slide">
+                                <img src="https://i.pinimg.com/736x/1e/1c/c3/1e1cc332d190c5157d74168d92f738be.jpg" alt="User" class="user-image">
+                                <h3 class="name">Zeii Neath</h3>
+                                <i class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quaerat esse incidunt possimus optio accusantium!</i>
+                            </li>
+
+                             <li class="testimonial swiper-slide">
+                                <img src="https://i.pinimg.com/736x/8f/19/b8/8f19b8875bf86ebdbf4cbae4be3c9888.jpg" alt="User" class="user-image">
+                                <h3 class="name">Zeii Neath</h3>
+                                <i class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quaerat esse incidunt possimus optio accusantium!</i>
+                            </li>
+
+                             <li class="testimonial swiper-slide">
+                                <img src="https://i.pinimg.com/736x/75/9b/48/759b48fbe1875d447c74c226c596b320.jpg" alt="User" class="user-image">
+                                <h3 class="name">Zeii Neath</h3>
+                                <i class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quaerat esse incidunt possimus optio accusantium!</i>
+                            </li>
+
+                             <li class="testimonial swiper-slide">
+                                <img src="https://i.pinimg.com/736x/57/25/a8/5725a856dbbe26693400999c7ce8e562.jpg" alt="User" class="user-image">
+                                <h3 class="name">Zeii Neath</h3>
+                                <i class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quaerat esse incidunt possimus optio accusantium!</i>
+                            </li>
+                       </ul> 
+                       <div class="swiper-pagination"></div>
+                       <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--gallery section-->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                       <a href="gallery.html">
+                        <img src="https://i.pinimg.com/736x/fe/b1/42/feb14264a2d19f8091a9913e05bb241a.jpg" alt="Gallery" class="gallery-image"> 
+                        </a>
+                    </li>
+
+                    <li class="gallery-item">
+                        <a href="gallery2.html">
+                            <img src="https://i.pinimg.com/736x/af/f3/5b/aff35b99a62486ed3de94660cfa704ee.jpg" alt="Gallery" class="gallery-image"> 
+                        </a>
+                    </li>
+
+                    <li class="gallery-item">
+                       <img src="https://i.pinimg.com/736x/50/3c/b9/503cb93a0fddcd50832bab626f59f8f5.jpg" alt="Gallery" class="gallery-image"> 
+                    </li>
+
+                    <li class="gallery-item">
+                       <img src="https://i.pinimg.com/736x/e0/c4/17/e0c4171f847eb1fa15b4147ca2b35a17.jpg" alt="Gallery" class="gallery-image"> 
+                    </li>
+
+                    <li class="gallery-item">
+                       <img src="https://i.pinimg.com/736x/f6/08/af/f608afe298f5eb14a446a92d0116bd3e.jpg" alt="Gallery" class="gallery-image"> 
+                    </li>
+
+                    <li class="gallery-item">
+                       <img src="https://i.pinimg.com/736x/3a/7b/3e/3a7b3e1759e1d424ff9693b98f85ef44.jpg" alt="Gallery" class="gallery-image"> 
+                    </li> 
+                    
+                    <li class="gallery-item">
+                       <img src="https://i.pinimg.com/736x/2f/de/66/2fde6673b30a6bfc3106c72cffc16851.jpg" alt="Gallery" class="gallery-image"> 
+                    </li>
+
+                    <li class="gallery-item">
+                       <img src="https://i.pinimg.com/736x/2d/bb/28/2dbb28b8c5fc418c2e3cb2edb5820398.jpg" alt="Gallery" class="gallery-image"> 
+                    </li>
+
+                    <li class="gallery-item">
+                       <img src="https://i.pinimg.com/736x/e9/62/48/e962483f2b60021990eef748a3dcb120.jpg" alt="Gallery" class="gallery-image"> 
+                    </li> 
+                </ul>
+            </div>
+        </section>
+        <!--My Team Ass-->
+        <!-- <section class=" mb-5">
+            <h2 class="section-title">Team Assigment</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="../image/me.jpg" alt="" class="mb-5">
+                    <h5>Name : Soy Sreyneath</h5>
+                    <p>ID : 61781</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../image/phallin2.jpg" alt="" class="mb-5">
+                    <h5>Name : Noeun Phallin</h5>
+                    <p>ID : 63654</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../image/dara3.jpg" alt="" class="mb-5">
+                    <h5>Name : Sao Dara</h5>
+                    <p>ID : 62434</p>
+                </div>
+                <div class="grid-item" >
+                    <img src="../image/vanna.jpg" alt="" class="mb-5">
+                    <h5>Name : Koeun Vanna</h5>
+                    <p>ID : 61378</p>
+                </div>
+                <div class="grid-item">
+                    <img src="../image/soriya.jpg" alt="" class="mb-5">
+                    <h5>Name : Heng Soriya</h5>
+                    <p>ID : 63559</p>
+                </div>
+            </div>
+        </section> -->
+        <!--Contact section-->
+        <section class="contact-section" id="contact">
+           <h2 class="section-title">Contact Us</h2>
+           <div class="section-content">
+                <ul class="contact-info-list">
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis.</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis.</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis.</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis.</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis.</p>
+                    </li>
+                </ul>
+                
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" required>
+                    <input type="email" placeholder="Your email" class="form-input" required>
+                    <textarea placeholder="Your Message" class="form-input" required></textarea>
+                    <button class="submit-button">Submit</button>
+                </form>
+           </div>
+        </section>
+
+        <!--footer section-->
+        <footer class="footer-section mt-9">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>Phnom penh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>0889540268</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>sreyneath22221111@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="../image/sreyneath_logo_no_bg.png" class="img-fluid" alt="logo" ></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Galler</a></li>
+                                    <li><a href="#">My Team</a></li>
+                                    <li><a href="#">Expert Team</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Latest News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2025, All Right Reserved <a href="https://codepen.io/anupkumar92/">Soy Sreyneath</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Galler</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">My Team</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- Product Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="product-gallery">
+                                <div class="main-image mb-3">
+                                    <img id="mainProductImage" src="https://i.pinimg.com/736x/2f/5d/dd/2f5ddd4376ec4b9c3ee7e4eaa7d7cf73.jpg" class="img-fluid" alt="Product">
+                                </div>
+                                <div class="thumbnail-images row g-2">
+                                    <div class="col-6 col-md-2">
+                                        <img src="https://i.pinimg.com/736x/2f/5d/dd/2f5ddd4376ec4b9c3ee7e4eaa7d7cf73.jpg" class="img-thumbnail active" onclick="changeImage(this)" alt="Thumbnail 1">
+                                    </div>
+                                    <div class="col-6 col-md-2">
+                                        <img src="https://i.pinimg.com/736x/25/1c/0a/251c0a6887c10d34f5f07923b836edc6.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 2">
+                                    </div>
+                                    <div class="col-6 col-md-2">
+                                        <img src="https://i.pinimg.com/736x/21/e9/e5/21e9e5c442871309238f7ab17cb5da08.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 3">
+                                    </div>
+                                    <div class="col-6 col-md-2">
+                                        <img src="https://i.pinimg.com/736x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 4">
+                                    </div>
+                                    <div class="col-6 col-md-2">
+                                        <img src="https://i.pinimg.com/736x/a2/d8/cc/a2d8cc8087d3fdebdac08f02c629e126.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 3">
+                                    </div>
+                                    <div class="col-6 col-md-2">
+                                        <img src="https://i.pinimg.com/736x/65/05/81/650581eaf66b79a52209b206eedba718.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Shoes</h2>
+                            <div class="price mb-3">
+                                <span class="current-price text-primary">After Discount: $49.99</span><br>
+                                <span class="original-price">Original-price: $79.99</span><br>
+                                <span class="discount-badge">Discount: 30%</span>
+                            </div>
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                                <span class="ms-2">(42 reviews)</span>
+                            </div>
+                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            
+                            <div class="size-selector mb-4">
+                                <h6>Size</h6>
+                                <div class="btn-group" role="group">
+                                    <input type="radio" class="btn-check" name="size" id="size-s" autocomplete="off" checked>
+                                    <label class="btn btn-outline-dark" for="size-s">S</label>
+                                    
+                                    <input type="radio" class="btn-check" name="size" id="size-m" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="size-m">M</label>
+                                    
+                                    <input type="radio" class="btn-check" name="size" id="size-l" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="size-l">L</label>
+                                    
+                                    <input type="radio" class="btn-check" name="size" id="size-xl" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="size-xl">XL</label>
+                                </div>
+                            </div>
+                            
+                            <div class="quantity-selector mb-4">
+                                <h6>Quantity</h6>
+                                <div class="input-group ms-2" style="width: 150px; ">
+                                    <button class="btn btn-outline-dark" type="button" onclick="decreaseQuantity()">-</button>
+                                    <input type="text" class="form-control text-center" value="1" id="quantityInput">
+                                    <button class="btn btn-outline-dark" type="button" onclick="increaseQuantity()">+</button>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2 d-md-flex">
+                                <button id="modalAddToCart" class="btn btn-dark btn-lg me-md-2">
+                                    <i class="fas fa-shopping-cart me-2"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-outline-dark btn-lg">
+                                    <i class="fas fa-heart me-2"></i> Check Out
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="#about" class="btn-box">More About Me</a>
-      </div>
-      <div class="image">
-        <img
-          src="images/me.jpg"
-          width="260px"
-          height="300px"
-          alt="Profile Photo"
-        />
-      </div>
-    </section>
+    </div>
 
-    <!--About-->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/me.jpg" alt="Profile Photo" />
-      </div>
-      <div class="about-text">
-        <h2>About <span>Me</span></h2>
-        <h4>Front-End Developer!</h4>
-        <p>
-          My name is Soy Sreyneath. I'm 20 years old. I study bachelor degree of
-          Science and Technology at ASIA EURO University. I build responsive and
-          user-friendly websites using HTML, CSS, JavaScript, Bootstrap, and
-          React, with a strong interest in UI/UX design. I love turning ideas
-          into functional, beautiful web experiences and am always learning new
-          tools to grow as a developer.
-        </p>
-        <a href="#skills" class="btn-box">More About Me</a>
-      </div>
-    </section>
+    <!-- Cart Icon -->
+    <div id="cart-icon">
+    🛒 <span id="cart-count">0</span>
+    </div>
 
-    <!--Service-->
-    <section class="services" id="services">
-      <div class="container">
-        <h1 class="sub-title">My <span>Services</span></h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code" style="color: #0ef"></i>
-            <h2>UX/UI Design</h2>
-            <p>
-              Crafting intuitive, engaging digital experiences that delight
-              users at every interaction. From in-depth research and wireframing
-              to polished screens and clickable prototypes, I deliver designs
-              that are visually stunning and highly usable.
-            </p>
-            <a href="#" class="read">Learn More</a>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-crop-simple" style="color: #0ef"></i>
-            <h2>Web Development</h2>
-            <p>
-              Building and maintaining websites and web applications-from simple
-              static pages to complex e‑commerce and web apps. Emphasizes
-              responsive UI, backend logic, server-side integrations, and
-              scalable architecture.
-            </p>
-            <a href="#" class="read">Learn More</a>
-          </div>
-
-          <div>
-            <i class="fa-brands fa-apple" style="color: #0ef"></i>
-            <h2>App Development</h2>
-            <p>
-              Creating functional, user-friendly applications for mobile and
-              desktop platforms. Covers ideation, UI/UX design, coding, testing,
-              deployment, and post-launch optimization.
-            </p>
-            <a href="#" class="read">Learn More</a>
-          </div>
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="hidden">
+        <div class="cart-content">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+            </ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+            <button id="checkout-btn">Check Out</button>
+            <button id="close-cart">Close</button>
         </div>
-      </div>
-    </section>
+    </div>
+        
+        
+    <!--linking swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="shoes.js"></script>
+    <script src="card.js"></script>
 
-    <!--My Skill-->
-    <section class="skills-section" id="skills">
-      <h1 class="sub-title">My <span>Skills</span></h1>
-      <div class="myskill">
-        <div class="container1">
-          <h1 class="heading1">Technical Skills</h1>
-          <div class="technical-bars">
-            <div class="bar">
-              <i class="fa-brands fa-html5" style="color: #147bbc"></i>
-              <div class="info">
-                <span>HTML</span>
-              </div>
-              <div class="progress-line html">
-                <span></span>
-              </div>
-            </div>
 
-            <div class="bar">
-              <i class="fa-brands fa-css3-alt" style="color: red"></i>
-              <div class="info">
-                <span>CSS</span>
-              </div>
-              <div class="progress-line css">
-                <span></span>
-              </div>
-            </div>
+</body>
 
-            <div class="bar">
-              <i class="fa-brands fa-bootstrap" style="color: yellow"></i>
-              <div class="info">
-                <span>Bootstrap</span>
-              </div>
-              <div class="progress-line bst">
-                <span></span>
-              </div>
-            </div>
+</html>
 
-            <div class="bar">
-              <i class="fa-brands fa-js" style="color: greenyellow"></i>
-              <div class="info">
-                <span>JavaScript</span>
-              </div>
-              <div class="progress-line js">
-                <span></span>
-              </div>
-            </div>
-
-            <div class="bar">
-              <i class="fa-brands fa-react" style="color: orangered"></i>
-              <div class="info">
-                <span>React.js</span>
-              </div>
-              <div class="progress-line react">
-                <span></span>
-              </div>
-            </div>
-
-            <div class="bar">
-              <i class="fa-brands fa-vuejs" style="color: rgb(237, 16, 27)"></i>
-              <div class="info">
-                <span>Vue.js</span>
-              </div>
-              <div class="progress-line veu">
-                <span></span>
-              </div>
-            </div>
-
-            <div class="bar">
-              <i
-                class="fa-solid fa-database"
-                style="color: rgb(220, 203, 20)"
-              ></i>
-              <div class="info">
-                <span>MySql</span>
-              </div>
-              <div class="progress-line database">
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container2">
-          <h1 class="heading1">Professional Skills</h1>
-          <div class="radial-bars">
-            <div class="radial-bar">
-              <svg x="0px" y="0px" viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-              </svg>
-              <div class="percentage">90%</div>
-              <div class="text">Creativity</div>
-            </div>
-            <div class="radial-bar">
-              <svg x="0px" y="0px" viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-              </svg>
-              <div class="percentage">90%</div>
-              <div class="text">Communication</div>
-            </div>
-            <div class="radial-bar">
-              <svg x="0px" y="0px" viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-              </svg>
-              <div class="percentage">85%</div>
-              <div class="text">Problem Solving</div>
-            </div>
-            <div class="radial-bar">
-              <svg x="0px" y="0px" viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-              </svg>
-              <div class="percentage">95%</div>
-              <div class="text">TeamWork</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="main-text">
-        <h2 class="sub-title">My <span>Portfolio</span></h2>
-        <div class="portfolio-content">
-          <div class="row">
-            <img src="../SreyNeath/images/website shoes.png" alt="Project 1" />
-            <div class="layer">
-              <h5>Web Design</h5>
-              <p>
-                Created a responsive e-commerce website for a shoe brand,with a
-                focus on user experience and mobile compatibility.
-              </p>
-              <a href="../SreyNeath/projectShoes/project/index.html"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="row">
-            <img src="../SreyNeath/images/image.png" alt="Project 2" />
-            <div class="layer">
-              <h5>UI/UX</h5>
-              <p>UI/UX design for a finance app with interactive prototypes.</p>
-              <a
-                href="https://www.figma.com/proto/wogxFcQRFvXGQWz5Qx3CG0/Finance-App--Community-?node-id=0-1&t=i5OEuiTN0slGXYZi-1"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="row">
-            <img src="../SreyNeath/images/banner fashion.png" alt="Project 3" />
-            <div class="layer">
-              <h5>Web Design</h5>
-              <p>
-                Designed project for a fashion brand with a focus on aesthetics
-                and user experience.
-              </p>
-              <a href="../SreyNeath/project eshop/HTML/HTML/Eshop.html"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <a href="" class="btn-box">View More</a>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <div class="contact-text">
-        <h2 class="sub-title">Contact <span>Me</span></h2>
-        <div class="contact-info">
-          <div class="contact-box">
-            <div class="contact-icons">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <h3>Email</h3>
-            <p>sreyneath22221111@gmail.com</p>
-            <a href="mailto:sreyneath22221111@gmail.com"
-              >Write Me <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-          <div class="contact-box">
-            <div class="contact-icons">
-              <i class="fa-brands fa-telegram"></i>
-            </div>
-            <h3>Telegram</h3>
-            <p>+855 88 95 40 268</p>
-            <a href="https://t.me/SoySreyneath"
-              >Text Me <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-          <div class="contact-box">
-            <div class="contact-icons">
-              <i class="fa-brands fa-facebook"></i>
-            </div>
-            <h3>Facebook</h3>
-            <p>Soy Sreyneath</p>
-            <a href="https://www.facebook.com/share/1BEZwsBc9n/?mibextid=wwXIfr"
-              >Text Me <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-          <div class="contact-box">
-            <div class="contact-icons">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <h3>Location</h3>
-            <p>Phnom Penh, Cambodia</p>
-            <a href="#">View Map <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <form action="#" class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button type="submit" class="btn-box">Send Message</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- ===== Footer ===== -->
-    <footer class="footer">
-      <div class="footer-content">
-        <p>&copy; 2024 Soy Sreyneath. All Rights Reserved.</p>
-        <div class="footer-icons">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        <a href="#home" class="footer-top-link">
-          <i class="fas fa-arrow-up"></i>
-        </a>
-      </div>
-    </footer>
-
-    <script src="main.js"></script>
-  </body>
+</body>
 </html>
